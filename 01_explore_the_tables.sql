@@ -20,7 +20,7 @@ GROUP BY order_status;
 SELECT 
     YEAR(order_purchase_timestamp) `year`,
     MONTH(order_purchase_timestamp) `month`,
-    COUNT(*)
+    COUNT(order_id)
 FROM
     orders
 GROUP BY YEAR
